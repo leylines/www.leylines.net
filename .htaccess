@@ -1,0 +1,35 @@
+<IfModule mod_mime.c>
+  AddType application/x-javascript .js
+  AddType text/css .css
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/css application/x-javascript text/x-component text/html text/plain text/xml application/javascript
+  <IfModule mod_setenvif.c>
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4.0[678] no-gzip
+    BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+  </IfModule>
+</IfModule>
+Header append Vary User-Agent env=!dont-vary
+
+<IfModule mod_headers.c>
+  Header always set X-FRAME-OPTIONS "DENY"
+  Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+
+<FilesMatch ".(gif|jpg|jpeg|png|ico|svg|js|css|pdf)$">
+  Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+	
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.leylines.net$ [NC]
+RewriteRule ^(.*)$ http://www.leylines.net/$1 [L,R=301]
+
+AddCharset UTF-8 .html
+
+ErrorDocument 404 /404.html
+
+# Avoid Server-Signature
+#ServerTokens Prod
+#ServerSignature Off

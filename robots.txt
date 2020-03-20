@@ -1,0 +1,6 @@
+# Allow all
+User-agent: *
+Disallow: /humhub
+Disallow: /sites
+
+Sitemap: https://www.leylines.net/sitemap.xml
