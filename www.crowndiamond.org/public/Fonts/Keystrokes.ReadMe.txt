@@ -1,0 +1,23 @@
+PaleoBora uses these keystrokes:
+Alef = a
+bet = b
+gimel = g
+dalet = d
+he = h
+waw = w
+zayin = z
+chet = j
+tet = f
+yod = y
+kaf = k
+lamed = l
+mem = m
+nun = n
+samek = s
+ayin = o
+pe = p
+tsade = x
+qof = q
+resh = r
+shin = c
+taw = t

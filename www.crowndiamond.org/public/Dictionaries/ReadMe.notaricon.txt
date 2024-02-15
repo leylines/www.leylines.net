@@ -1,0 +1,1 @@
+This booklet is a dictionary of the the letters, themselves: what each letter means, signifies, and implies. Each letter has its own page, ready to print at your leisure. The file Hebraic.Emblems.pdf is better.
