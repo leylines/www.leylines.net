@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "leylines.net",
+  "Id": "861d12ad-660c-426c-ba41-09e3fb692766"
+}
